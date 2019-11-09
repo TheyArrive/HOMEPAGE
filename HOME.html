@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<title>HOME</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="DOME_files/style.css">
+	<script src="DOME_files/dome.js" defer="defer"></script>
+
+	<style type="text/css">
+		body > div#main > span > div#static_links {
+			height: 30px;
+		}
+		body > div#main > span > form > input {
+			border: none;
+			height: 50px;
+		}
+		div#links > div.section {
+			display: inline-block;
+			vertical-align: top;
+			height: 200px;
+			width: 300px;
+			margin: 2px;
+		}
+		div#links > div.section > div {
+			padding: 15px;
+		}
+		div#wiper {
+			display: block;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #2C2C2C;
+			opacity: 1;
+			z-index: 100;
+			transition: .5s opacity .5s, .5s z-index .5s;
+		}
+		html, body {
+			margin: 0;
+			background-color: #2C2C2C;
+		}
+	</style>
+
+</head>
+<body onresize="matchLinks()" onunload="">
+
+	<div id="wiper"></div>
+
+	<div id="main" style="max-width: 912px; height: 490px;">
+		<span style="display: block">
+			<div id="static_links">
+			  
+<a href="mailto:">Compose E-Mail</a>
+				<a href="steam:">Open Steam</a>
+			</div>
+			<form method="GET" id="action" action="https://duckduckgo.com/">
+				<input type="text" oninput="matchLinks(this.value)" autofocus="" autocomplete="off" name="q">
+</form>
+<div id="links"><div id="Chan" class="section">Chan<div><a href="https://boards.4chan.org/g/">4/g/ Technolgy</a><a href="https://boards.4chan.org/mu/">4/mu/ Music</a><a href="https://boards.4chan.org/pol/">4/pol/ Politcally Incorrect</a><a href="https://boards.4channel.org/tv/">4/tv/ Television & Film</a> </div></div><div id="Social" class="section">Social<div><a href="https://www.youtube.com/">YouTube</a><a href="https://twitter.com/">Twitter</a><a href="https://twitch.tv/">Twitch</a><a href="https://www.bitchute.com/"> Bitchute</a></a> </div></div><div id="E-Mail" class="section">E-Mail<div><a href="https://mail.google.com/mail/u/0/">GMail</a></div></div><div id="Games" class="section">Games<div><a href="steam://run/730">CS:GO</a><a href="https://osu.ppy.sh">Osu!</a><a href="https://ripple.moe/">Ripple</a></div></div>
+		</span>
+	</div>
+
+
+
+</body></html>
