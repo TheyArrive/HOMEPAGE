@@ -14,7 +14,9 @@ var sites = {
         "GMail": "https://mail.google.com/mail/u/0/"
     },
     "Games": {
-        "CS:GO": "steam://run/730"
+        "CS:GO": "steam://run/730",
+        "Osu!": "https://osu.ppy.sh",
+        "Ripple": "https://ripple.moe/"
     }
 };
 
