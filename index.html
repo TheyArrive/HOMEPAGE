@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
+    </head>
+
+    <body onresize="matchLinks()">
+        <div id="wiper"></div>
+        
+        <div id="main">
+            <span>
+                <div id="staticLinks">
+                    <div id="clock"></div>
+
+                    <a href="mailto:">Compose E-Mail</a>
+                    <a href="steam:">Open Steam</a>
+                </div>
+
+                <form method="GET" id="action" action="https://duckduckgo.com/">
+                    <input type="text" oninput="matchLinks(this.value)" autofocus="" autocomplete="off" name="q" />
+                </form>
+
+                <div id="links">
+                    <div id="Chan" class="section">
+                        Chan
+                        <div>
+                            <a href="https://boards.4chan.org/g/">4/g/ Technolgy</a>
+                            <a href="https://boards.4chan.org/mu/">4/mu/ Music</a>
+                            <a href="https://boards.4chan.org/pol/">4/pol/ Politcally Incorrect</a>
+                            <a href="https://boards.4channel.org/tv/">4/tv/ Television & Film</a>
+                        </div>
+                    </div>
+
+                    <div id="Social" class="section">
+                        Social
+                        <div>
+                            <a href="https://www.youtube.com/">YouTube</a>
+                            <a href="https://twitter.com/">Twitter</a>
+                            <a href="https://twitch.tv/">Twitch</a>
+                            <a href="https://www.bitchute.com/"> Bitchute</a>
+                        </div>
+                    </div>
+
+                    <div id="E-Mail" class="section">
+                        E-Mail
+                        <div>
+                            <a href="https://mail.google.com/mail/u/0/">GMail</a>
+                        </div>
+                    </div>
+                    
+                    <div id="Games" class="section">
+                        Games
+                        <div>
+                            <a href="steam://run/730">CS:GO</a>
+                            <a href="https://osu.ppy.sh">Osu!</a>
+                            <a href="https://ripple.moe/">Ripple</a>
+                        </div>
+                    </div>
+            </span>
+        </div>
+    </body>
+
+    <script src="index.js"></script>
+</html>

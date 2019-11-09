@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+:root {
+	--hdr: #A317C6;
+	--bkg: #2C2C2C;
+	--frg: #4A4A4A;
+	--hgl: #95A1DE;
+	--htx: #FFFFFF;
+	--txt: #CCC;
+}
+
+div#main {
+	transform: translate(-50%, -50%);
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: 1s transform;
+	max-height: 90vh;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+    transition: .2s height;
+    max-width: 912px;
+    height: 490px;
+}
+div#main > span {
+    display: block;
+}
+
+div#main > span > div#staticLinks {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--hdr);
+	margin: 2px 2px 0px 2px;
+	box-sizing: border-box;
+	color: #CCC;
+	padding-right: 7px;
+	padding-left: 5px;
+	line-height: 30px;
+	font-size: 16px;
+	border: none;
+	width: 908px;
+	height: 30px;
+}
+div#main > span > div#staticLinks > div {
+    float: left;
+    padding-right: 7px;
+}
+div#main > span > div#staticLinks > a {
+	float: right;
+    padding-right: 7px;
+}
+
+div#main > span > div#staticLinks > span#clock {
+    margin-right: 15px;
+}
+
+div#main > span > div#staticLinks > span:first-of-type {
+	color: var(--htx);
+	float: left;
+}
+
+div#main > span > div#staticLinks > a {
+	text-decoration: none;
+	color: var(--htx);
+}
+
+div#main > span > div#staticLinks > a:hover {
+	color: white;
+}
+
+div#main > span > div#staticLinks > a+a {
+	margin-left: 15px;
+}
+
+div#main > span > form > input {
+	background-color: var(--frg);
+	font-family: "Montserrat", sans-serif;
+	margin: 0px 2px 2px 2px;
+	box-sizing: border-box;
+	color: var(--txt);
+	padding-left: 5px;
+	font-size: 40px;
+	width: 908px;
+	border: none;
+	height: 50px;
+}
+
+div#main > span > form > input:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 912px) {
+	div#main > span > form > input,
+	div#main > span > div#staticLinks {
+		width: 604px;
+	}
+}
+
+@media screen and (max-width: 608px) {
+	div#main > span > form > input,
+	div#main > span > div#staticLinks {
+		width: 300px;
+	}
+}
+
+div#links > div.section {
+	background-color: var(--hdr);
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	height: 200px;
+	width: 300px;
+	margin: 2px;
+	overflow: hidden;
+	color: var(--htx);
+	display: inline-block;
+	vertical-align: top;
+	height: 200px;
+	width: 300px;
+	margin: 2px;
+}
+
+div#links > div.section:before {
+	content: "";
+	margin-left: 5px;
+}
+
+div#links > div.section > div {
+	padding: 15px;
+	background-color: var(--frg);
+	height: 100%;
+}
+
+div#links > div.section > div > a {
+	text-decoration: none;
+	color: var(--txt);
+	display: block;
+}
+
+div#links > div.section > div > a:hover {
+	background-color: rgba(255, 255, 255, .1);
+	color: var(--hgl);
+}
+
+div#links > div.section > div > a.selected {
+	background-color: rgba(255, 255, 255, .1);
+	color: var(--hgl);
+}
+
+div#links > div.section > div > a+a {
+	margin-top: 5px;
+}
+
+div#wiper {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #2C2C2C;
+	opacity: 1;
+	z-index: 100;
+	transition: .5s opacity .5s, .5s z-index .5s;
+	opacity: 0 !important;
+	z-index: -1 !important;
+}
+
+html,
+body {
+	margin: 0;
+	background-color: #2C2C2C;
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
